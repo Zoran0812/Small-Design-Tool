@@ -1,0 +1,60 @@
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.shape {
+  /*background-color: lightgray;*/
+  text-align: left;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+
+#zone {
+  grid-area: footer;
+  border: 2px solid #ccc;
+  margin: 20px 0px;
+}
+
+canvas {
+  border: solid #ccc;
+  border-width: 0px 0px 1px 0px;
+  grid-area: main;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 200px auto 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "header header header" "sidebar main main" "sidebar footer .";
+}
+.buttons {
+  width: 150px;
+}
+button {
+  background-color : transparent;
+  border-width : 0;
+}
+
+input {
+  width : 35px;
+  height : 15px;
+  font-size : 12px;
+  text-align : center;
+  border : none;
+  padding: 1px 2px;
+  background-color : rgba(233, 81, 21, 0.5);
+}
+
+input:active {
+  border-width : 0;
+}
+main {
+  position : absolute;
+  left : 150px;
+}
